@@ -1,14 +1,14 @@
 import {Outlet} from "react-router-dom";
-import {Footer, Header} from "@/widgets";
+import { FooterShop, HeaderShop} from "@/widgets";
 
 export const ShopLayout = () => {
     return (
         <div>
-            <Header />
+            <HeaderShop />
             <main>
                 <Outlet />
             </main>
-            <Footer />
+            <FooterShop />
         </div>
     );
 };

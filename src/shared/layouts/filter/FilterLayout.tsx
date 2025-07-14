@@ -1,14 +1,14 @@
 import {Outlet} from "react-router-dom";
-import {Footer, Header} from "@/widgets";
+import {FooterFilter, HeaderFilter} from "@/widgets";
 
 export const FilterLayout = () => {
     return (
         <div>
-            <Header />
+            <HeaderFilter />
             <main>
                 <Outlet />
             </main>
-            <Footer />
+            <FooterFilter />
         </div>
     );
 };
