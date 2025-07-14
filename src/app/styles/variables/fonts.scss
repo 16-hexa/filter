@@ -1,26 +1,8 @@
 @font-face {
-  font-family: 'Jost ExtraBold';
-  src: url('src/shared/fonts/Jost/Jost-ExtraBold.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Jost Light';
-  src: url('src/shared/fonts/Jost/Jost-Light.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Jost Regular';
-  src: url('src/shared/fonts/Jost/Jost-Regular.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Jost';
-  src: url('src/shared/fonts/Jost/Jost-Black.ttf') format('ttf');
+  font-family: 'ImperialScript';
+  src: url('src/shared/fonts/Imperial_Script/ImperialScript-Regular.ttf') format('ttf');
 }
 
 :root {
-  --font-jost-light: 'Jost Light', sans-serif;
-  --font-jost-regular: 'Jost Regular', sans-serif;
-  --font-jost-extrabold: 'Jost ExtraBold', sans-serif;
-  --font-jost-black: 'Jost Black', sans-serif;
+  --font-imperial-script: 'ImperialScript', sans-serif;
 }
