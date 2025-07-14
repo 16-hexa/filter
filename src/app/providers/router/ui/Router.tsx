@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import {BonusProgram, Collaboration, Employment, MainPage, ShopMainPage} from "@/pages";
+import {BonusProgram, Collaboration, Employment, ItemPage, MainPage, ShopMainPage} from "@/pages";
 
 const Router = () => {
   return (
@@ -10,6 +10,7 @@ const Router = () => {
           <Route path="/collab" element={<Collaboration />} />
           <Route path="/employment" element={<Employment />} />
           <Route path="/shop" element={<ShopMainPage />} />
+          <Route path="/item/:id" element={<ItemPage />} />
       </Routes>
     </div>
   );
