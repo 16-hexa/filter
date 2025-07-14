@@ -1,10 +1,10 @@
 import './styles/global.scss';
-import { Landing } from '@/pages';
+import Router from "@/app/providers/router/ui/Router.tsx";
 
 export const App = () => {
   return (
     <div>
-      <Landing />
+      <Router />
     </div>
   );
 };
