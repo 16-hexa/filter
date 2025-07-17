@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: padding 0.3s ease, background 0.3s ease;
+  padding-top: 160px;
+  padding-bottom: 20px;
+  z-index: 999;
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: var(--grey);
+      font-weight: 400;
+      font-family: var(--font-roboto-condensed);
+      font-size: 16px;
+      letter-spacing: -0.03em;
+    }
+  }
+}
+
+.scrolled {
+  padding-top: 40px;
+}

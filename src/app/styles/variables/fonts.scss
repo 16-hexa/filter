@@ -3,6 +3,12 @@
   src: url('src/shared/fonts/Imperial_Script/ImperialScript-Regular.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('src/shared/fonts/Imperial_Script/ImperialScript-Regular.ttf') format('ttf');
+}
+
 :root {
   --font-imperial-script: 'ImperialScript', sans-serif;
+  --font-roboto-condensed: 'ImperialScript', sans-serif;
 }
