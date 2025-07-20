@@ -8,7 +8,6 @@ export const FooterFilter = () => {
             <div className={styles.mottoWrapper}>
                 <span className={styles.motto}>coffee is my love</span>
             </div>
-
             <div className={styles.columns}>
                 <div className={styles.column}>
                     <Link to='/employment' className={styles.link}>
@@ -31,13 +30,15 @@ export const FooterFilter = () => {
                     </Link>
                 </div>
 
-                <div className={styles.column}>
-                    <p>Рассылка</p>
+                <div className={styles.newsletter}>
+                    <p className={styles.send}>Рассылка</p>
                     <input type="email" placeholder="Email" className={styles.emailInput} />
                 </div>
             </div>
 
+
             <div className={styles.bottomRow}>
+
                 <div className={styles.copyright}>
                     <span>© 2025 </span>
                     <Link to="/brand" className={styles.brandLink}>
@@ -45,12 +46,13 @@ export const FooterFilter = () => {
                         <img src={logo} className={styles.logo} />
                     </Link>
                 </div>
+
                 <div className={styles.links}>
                     <a href="#">Политика в отношении обработки персональных данных</a>
                     <a href="#">Пользовательское соглашение</a>
                 </div>
             </div>
-
         </footer>
     );
 };
+
