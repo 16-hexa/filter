@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'ImperialScript';
-  src: url('src/shared/fonts/Imperial_Script/ImperialScript-Regular.ttf') format('ttf');
+  src: url('src/shared/fonts/Imperial_Script/ImperialScript-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url('src/shared/fonts/Imperial_Script/ImperialScript-Regular.ttf') format('ttf');
+  src: url('src/shared/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype');
 }
 
 :root {
   --font-imperial-script: 'ImperialScript', sans-serif;
-  --font-roboto-condensed: 'ImperialScript', sans-serif;
+  --font-roboto-condensed: 'Roboto Condensed', sans-serif;
 }
