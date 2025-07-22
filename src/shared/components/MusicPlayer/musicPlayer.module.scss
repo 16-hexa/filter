@@ -7,7 +7,6 @@
   bottom: 130px;
   left: 100px;
   gap: 16px;
-  font-family: sans-serif;
   background: rgba(62, 62, 62, 0.51);
   border-radius: 35px;
   z-index: 20;
@@ -35,28 +34,40 @@
   }
 }
 
+.column{
+  flex-direction: column;
+}
+
 .info {
   flex: 1;
 }
 
 .title {
-  font-weight: bold;
-  font-size: 16px;
+  font-family: var(--font-roboto-condensed-light);
+  font-weight: 300;
+  font-size: 23px;
+  letter-spacing: -0.03em;
+  color: var(--background);
 }
 
 .artist {
-  font-size: 14px;
+  font-family: var(--font-roboto-condensed-medium);
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+  color: var(--background);
+  margin-bottom: 2px;
 }
 
 .controls {
   display: flex;
-  gap: 8px;
+  gap: 9px;
 
   button {
     background: none;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     cursor: pointer;
     transition: transform 0.2s;
 

@@ -51,16 +51,18 @@ export const MusicPlayer = () => {
                 ref={coverRef}
                 style={{ backgroundImage: `url(${track.cover})` }}
             />
-            <div className={styles.info}>
-                <div className={styles.title}>{track.title}</div>
-                <div className={styles.artist}>{track.artist}</div>
+            <div className={styles.column}>
+                <div className={styles.info}>
+                    <div className={styles.title}>{track.title}</div>
+                    <div className={styles.artist}>{track.artist}</div>
+                </div>
+                <div className={styles.controls}>
+                    <button onClick={prevTrack}>⏮</button>
+                    <button onClick={togglePlay}>{isPlaying ? '⏸' : '▶'}</button>
+                    <button onClick={nextTrack}>⏭</button>
+                </div>
+                <audio ref={audioRef} src={track.audioSrc} />
             </div>
-            <div className={styles.controls}>
-                <button onClick={prevTrack}>⏮</button>
-                <button onClick={togglePlay}>{isPlaying ? '⏸' : '▶'}</button>
-                <button onClick={nextTrack}>⏭</button>
-            </div>
-            <audio ref={audioRef} src={track.audioSrc} />
         </div>
     );
 };
