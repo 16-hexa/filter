@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Great Vibes', cursive;
+}
+
+.textTopLeft {
+  position: absolute;
+  bottom: 77vh;
+  left: 0;
+  font-size: 210px;
+  z-index: 2;
+  font-family: var(--font-imperial-script);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.textBottomRight {
+  position: absolute;
+  top: 68vh;
+  right: 1rem;
+  font-size: 220px;
+  z-index: 2;
+  font-family: var(--font-imperial-script);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.graffiti {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: auto;
+  filter: blur(10px);
+  z-index: 1;
+}
