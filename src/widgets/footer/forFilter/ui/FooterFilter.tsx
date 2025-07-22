@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '@shared/images/vector/vector.svg';
 
 export const FooterFilter = () => {
+    
     return (
         <footer className={styles.container}>
             <div className={styles.mottoWrapper}>

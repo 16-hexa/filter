@@ -76,7 +76,7 @@
   flex-direction: column;
   gap: 6px;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   font-size: 12px;
   color: var(--light-grey);
   margin-top: -60px;
@@ -91,6 +91,34 @@
 }
 
 
+
+.copyright {
+  display: flex;
+  gap: 10px;
+
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: var(--white-50);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  a {
+    font-family: var(--font-roboto-condensed);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+    color: var(--white-50);
+  }
+}
 
 .copyright {
   display: flex;
@@ -143,6 +171,11 @@
   font-family: var(--font-roboto-condensed);
   position: relative;
   z-index: 1;
+
+  &:hover + .logo {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
 }
 
 .logo {
