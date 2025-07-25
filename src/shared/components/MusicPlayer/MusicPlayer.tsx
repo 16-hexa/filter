@@ -9,12 +9,12 @@ type Track = {
 };
 
 const tracks: Track[] = [
-    {
-        title: 'Smells like Spirate',
-        artist: 'NIRVANA',
-        audioSrc: '/tracks/nirvana.mp3',
-        cover: '/tracks/nirvana.jpg',
-    },
+    // {
+    //     title: 'Smells like Spirate',
+    //     artist: 'NIRVANA',
+    //     audioSrc: '/tracks/nirvana.mp3',
+    //     cover: '/tracks/nirvana.jpg',
+    // },
 ];
 
 export const MusicPlayer = () => {
