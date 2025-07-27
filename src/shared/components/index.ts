@@ -1,1 +1,2 @@
-export { MusicPlayer } from './MusicPlayer/MusicPlayer.tsx'
+export { MusicPlayer } from './MusicPlayer/ui/MusicPlayer.tsx';
+export { tracks } from './MusicPlayer/tracks.ts'
