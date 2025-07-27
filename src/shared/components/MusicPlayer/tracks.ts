@@ -1,4 +1,7 @@
 import smells from "@shared/images/tracks/NIRVANA/Smells like Spirate/smells.jpeg";
+import crush from '@shared/images/tracks/PlayboiCarti/G WAGON /hq720.jpg';
+import choppa from '@shared/images/tracks/PlayboiCarti/Choppa Wont Miss/maxresdefault.jpg';
+
 import {Track} from "@/models";
 
 export const tracks: Track[] = [
@@ -7,5 +10,19 @@ export const tracks: Track[] = [
         artist: 'NIRVANA',
         audioSrc: 'src/shared/images/tracks/NIRVANA/Smells like Spirate/Fame_on_Fire_-_Smells_Like_Teen_Spirit_Nirvana_Cover_(SkySound.cc).mp3',
         cover: smells,
+    },
+
+    {
+        title: 'Crush Out',
+        artist: 'Playboi Carti',
+        audioSrc: 'src/shared/images/tracks/PlayboiCarti/G WAGON /Playboi_Carti_-_G_WAGON_CRASH_OUT_Remastered_(SkySound.cc).mp3',
+        cover: crush,
+    },
+
+    {
+        title: 'Choppa Won\'t Miss',
+        artist: 'Playboi Carti',
+        audioSrc: 'src/shared/images/tracks/PlayboiCarti/Choppa Wont Miss/Playboi_Carti_feat._Young_Thug_-_Choppa_Won_t_Miss_(SkySound.cc).mp3',
+        cover: choppa,
     },
 ];
