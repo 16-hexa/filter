@@ -1,6 +1,7 @@
 import smells from "@shared/images/tracks/NIRVANA/Smells like Spirate/smells.jpeg";
 import crush from '@shared/images/tracks/PlayboiCarti/G WAGON /hq720.jpg';
 import choppa from '@shared/images/tracks/PlayboiCarti/Choppa Wont Miss/maxresdefault.jpg';
+import stars from '@shared/images/tracks/Kendrick/AllTheStars/ab67616d0000b273c027ad28821777b00dcaa888.jpeg'
 
 import {Track} from "@/models";
 
@@ -24,5 +25,12 @@ export const tracks: Track[] = [
         artist: 'Playboi Carti',
         audioSrc: 'src/shared/images/tracks/PlayboiCarti/Choppa Wont Miss/Playboi_Carti_feat._Young_Thug_-_Choppa_Won_t_Miss_(SkySound.cc).mp3',
         cover: choppa,
+    },
+
+    {
+        title: 'All the stars',
+        artist: 'Kendrick Lamar feat. SZA',
+        audioSrc: 'src/shared/images/tracks/Kendrick/AllTheStars/Kendrick Lamar - All The Stars (feat. SZA).mp3',
+        cover: stars,
     },
 ];
