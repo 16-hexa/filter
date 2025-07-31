@@ -20,6 +20,12 @@
       font-family: var(--font-roboto-condensed);
       font-size: 16px;
       letter-spacing: -0.03em;
+
+      &:hover{
+        font-size: 36px;
+        color: #202020;
+        filter: blur(2.5px);
+      }
     }
   }
 }
