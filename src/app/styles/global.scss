@@ -20,6 +20,14 @@ body {
   overflow-x: clip;
 }
 
+:root,
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .app {
   display: flex;

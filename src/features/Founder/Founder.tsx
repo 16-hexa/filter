@@ -4,7 +4,7 @@ import founderImg2 from '@shared/images/ildar/founderImg2.png';
 
 export const Founder = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="founder">
             <div className={styles.grid}>
                 <div className={styles.founderImg1}>
                     <img src={founderImg1} alt="Ильдар Габидуллин на улице" />
