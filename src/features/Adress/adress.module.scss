@@ -1,3 +1,15 @@
 .container{
   height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.spots{
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  color: var(--dark-grey);
 }
