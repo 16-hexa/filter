@@ -46,7 +46,7 @@ export const HeaderFilter = () => {
                 <a href="#">история</a>
                 <a onClick={() => smoothScrollTo('founder', 100)}>основатели</a>
                 <a href="#">магазин</a>
-                <a href="#">адрес</a>
+                <a onClick={() => smoothScrollTo('adress', 100)}>адрес</a>
                 <a href="#">контакты</a>
             </nav>
         </header>

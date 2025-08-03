@@ -5,7 +5,7 @@ import image3 from '@shared/images/spots/image-1.png';
 
 export const Address = () => {
     return(
-        <div className={styles.container}>
+        <div className={styles.container} id="adress">
             <h2 className={styles.spots}>Наши споты</h2>
 
             <div className={styles.photo_container}>
