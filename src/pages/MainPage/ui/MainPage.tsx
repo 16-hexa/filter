@@ -1,5 +1,4 @@
-import styles from './main.module.scss';
-import {Address, Founder, LandingPage} from "@/features";
+import {Address, Founder, LandingPage, ShopInfo} from "@/features";
 
 export const MainPage = () => {
     return(
@@ -7,6 +6,7 @@ export const MainPage = () => {
             <LandingPage />
             <Founder />
             <Address />
+            <ShopInfo />
         </div>
     )
 }
