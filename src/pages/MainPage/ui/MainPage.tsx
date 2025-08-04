@@ -6,6 +6,10 @@ export const MainPage = () => {
             <LandingPage />
             <Founder />
             <Address />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <ShopInfo />
         </div>
     )

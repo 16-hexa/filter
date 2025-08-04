@@ -69,5 +69,46 @@
   width: 340px;
 }
 
-.bold {
+.brandLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--grey);
+
+  &:hover .logo {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+.brand {
+  color: var(--grey);
+  position: relative;
+  z-index: 1;
+
+  &:hover + .logo {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+.logo {
+  position: absolute;
+  left: -72px;
+  bottom: 20%;
+  transform: translateY(24px);
+  width: 261px;
+  height: 64px;
+  opacity: 0;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1.2s ease, opacity 0.3s ease;
+
+  path {
+    stroke: #E7161C;
+    stroke-width: 0.5;
+    fill: none;
+  }
 }
