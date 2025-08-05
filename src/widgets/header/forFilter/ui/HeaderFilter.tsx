@@ -43,7 +43,7 @@ export const HeaderFilter = () => {
     return (
         <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
             <nav className={styles.nav}>
-                <a href="#">история</a>
+                <a onClick={() => smoothScrollTo('part', 100)}>предложения</a>
                 <a onClick={() => smoothScrollTo('founder', 100)}>основатели</a>
                 <a href="#">магазин</a>
                 <a onClick={() => smoothScrollTo('adress', 100)}>адрес</a>

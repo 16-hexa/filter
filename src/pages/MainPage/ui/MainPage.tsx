@@ -1,4 +1,4 @@
-import {Address, Founder, LandingPage, ShopInfo} from "@/features";
+import {Address, Founder, LandingPage, Partnership, ShopInfo} from "@/features";
 
 export const MainPage = () => {
     return(
@@ -11,6 +11,7 @@ export const MainPage = () => {
             <br/>
             <br/>
             <ShopInfo />
+            <Partnership />
         </div>
     )
 }
