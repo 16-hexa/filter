@@ -2,7 +2,8 @@ import smells from "@shared/images/tracks/NIRVANA/Smells like Spirate/smells.jpe
 import crush from '@shared/images/tracks/PlayboiCarti/G WAGON /hq720.jpg';
 import choppa from '@shared/images/tracks/PlayboiCarti/Choppa Wont Miss/maxresdefault.jpg';
 import stars from '@shared/images/tracks/Kendrick/AllTheStars/ab67616d0000b273c027ad28821777b00dcaa888.jpeg';
-import sleep from '@shared/images/tracks/NIRVANA/Where Did You Sleep Last Night/sleep.webp'
+import sleep from '@shared/images/tracks/NIRVANA/Where Did You Sleep Last Night/sleep.webp';
+import best from '@shared/images/tracks/TinaTurner/TheBest/1200x630bb.jpg';
 
 import {Track} from "@/models";
 
@@ -40,5 +41,12 @@ export const tracks: Track[] = [
         artist: 'NIRVANA',
         audioSrc: 'src/shared/images/tracks/NIRVANA/Where Did You Sleep Last Night/nirvana-where-did-you-sleep-last-night-(download-zaycev.net).mp3',
         cover: sleep,
+    },
+
+    {
+        title: 'The Best',
+        artist: 'Tina Turner',
+        audioSrc: 'src/shared/images/tracks/TinaTurner/TheBest/Tina_Turner_-_The_Best_(SkySound.cc).mp3',
+        cover: best,
     },
 ];
