@@ -17,8 +17,8 @@
   color: var(--grey);
 
   @media(max-width: 900px){
-    font-size: 190px;
-    bottom: 78vh;
+    font-size: 220px;
+    top: -5%;
   }
 
   @media(max-width: 500px){
@@ -38,6 +38,11 @@
   font-style: normal;
   font-weight: 400;
   color: var(--grey);
+
+  @media(max-width: 900px){
+    font-size: 220px;
+    top: 78vh;
+  }
 }
 
 .graffiti {
@@ -49,4 +54,8 @@
   height: auto;
   filter: blur(10px);
   z-index: 1;
+
+  @media(max-width: 900px){
+    filter: blur(5px);
+  }
 }
