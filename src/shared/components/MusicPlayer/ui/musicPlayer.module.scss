@@ -1,7 +1,7 @@
 .player {
   display: flex;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px;
   width: 400px;
   position: absolute;
   bottom: 130px;
@@ -10,6 +10,15 @@
   background: rgba(62, 62, 62, 0.51);
   border-radius: 35px;
   z-index: 20;
+
+  @media(max-width: 900px){
+    bottom: 330px;
+    left: 40px;
+    width: 420px;
+    padding: 24px 21px;
+    border-radius: 38px;
+    gap: 21px;
+  }
 }
 
 .cover {
@@ -20,8 +29,12 @@
   background-size: cover;
   background-position: center;
   transition: transform 0.5s linear;
-}
 
+  @media(max-width: 900px){
+    width: 104px;
+    height: 104px;
+  }
+}
 
 .spin {
   animation: spin 5s linear infinite;
@@ -66,7 +79,7 @@
 
 .artist {
   font-family: var(--font-roboto-condensed-medium);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   letter-spacing: -0.03em;
   color: var(--background);

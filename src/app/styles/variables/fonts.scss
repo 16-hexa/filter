@@ -18,9 +18,15 @@
   src: url('src/shared/fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto Condensed SemiBold';
+  src: url('src/shared/fonts/Roboto_Condensed/static/RobotoCondensed-SemiBold.ttf') format('truetype');
+}
+
 :root {
   --font-imperial-script: 'ImperialScript', sans-serif;
   --font-roboto-condensed: 'Roboto Condensed', sans-serif;
   --font-roboto-condensed-light: 'Roboto Condensed Light', sans-serif;
   --font-roboto-condensed-medium: 'Roboto Condensed Light', sans-serif;
+  --font-roboto-condensed-semibold: 'Roboto Condensed SemiBold', sans-serif;
 }
