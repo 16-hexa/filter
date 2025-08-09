@@ -13,7 +13,7 @@
   }
 
   @media(max-width: 500px){
-    //font-size: 12px;
+    padding-top: 200px;
   }
 
   .nav {
@@ -34,7 +34,7 @@
       }
 
       @media(max-width: 500px){
-        font-size: 12px;
+        font-size: 10px;
       }
 
       &:hover{
@@ -48,7 +48,7 @@
         }
 
         @media(max-width: 500px){
-          font-size: 9px !important;
+          font-size: 20px !important;
           filter: blur(1.2px);
         }
       }
@@ -64,6 +64,6 @@
   }
 
   @media(max-width: 500px){
-    padding-top: 200px;
+    padding-top: 60px;
   }
 }

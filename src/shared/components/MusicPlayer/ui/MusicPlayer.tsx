@@ -31,12 +31,14 @@ export const MusicPlayer = () => {
 
     return (
         <div className={styles.player}>
-            <div
-                className={`${styles.cover} ${isPlaying ? styles.spin : ''}`}
-                ref={coverRef}
-                style={{ backgroundImage: `url(${track.cover})` }}
-            >
-                <div className={styles.centerHole} />
+            <div className={styles.coverWrapper}>
+                <div className={styles.circle}></div>
+                <div
+                    className={`${styles.cover} ${isPlaying ? styles.spin : ''}`}
+                    style={{ backgroundImage: `url(${track.cover})` }}
+                >
+                    <div className={styles.centerHole} />
+                </div>
             </div>
 
             <div className={styles.column}>
