@@ -22,7 +22,7 @@
   }
 
   @media(max-width: 500px){
-    font-size: 80vw;
+    font-size: 160px;
     bottom: 80vh;
     left: -20px;
   }
@@ -43,6 +43,11 @@
     font-size: 250px;
     top: 78vh;
   }
+
+  @media(max-width: 500px){
+    font-size: 190px;
+    top: 80vh;
+  }
 }
 
 .graffiti {
@@ -57,5 +62,9 @@
 
   @media(max-width: 900px){
     filter: blur(5px);
+  }
+
+  @media(max-width: 500px){
+    filter: blur(3px);
   }
 }
