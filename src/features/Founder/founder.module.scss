@@ -76,14 +76,15 @@
   @media (max-width: 900px) {
     margin-left: 0;
     text-align: center;
+    margin-top: 120px;
 
     h2 {
-      font-size: 50px;
+      font-size: 55px;
       line-height: 52px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 23px;
       line-height: 26px;
     }
   }
@@ -104,12 +105,11 @@
 
   @media (max-width: 900px) {
     position: absolute;
-    top: 130px;
-    left: 0;
-    font-size: 150px;
+    bottom: 80px;
+    left: -250px;
+    font-size: 250px;
     line-height: 160px;
-    opacity: 0.2;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     text-align: center;
   }
@@ -122,18 +122,20 @@
   }
 
   .founderImg2 img {
-    width: 300px;
+    width: 330px;
     height: auto;
     position: relative;
     z-index: 3;
+    top: 120px;
+    left: 70px;
   }
 
   .founderImg1 img {
-    width: 200px;
+    width: 250px;
     height: auto;
     position: absolute;
-    top: 40px;
-    left: -40px;
+    top: 0px;
+    left: -120px;
     z-index: 2;
   }
 }
