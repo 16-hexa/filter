@@ -7,6 +7,15 @@
   justify-content: center;
   padding: 45px 98px;
   overflow: hidden;
+
+  @media (max-width: 900px) {
+    padding: 80px 80px;
+    height: auto;
+  }
+
+  @media (max-width: 500px) {
+    padding: 45px 18px;
+  }
 }
 
 .grid {
@@ -18,8 +27,15 @@
   position: relative;
   z-index: 2;
   max-width: 980px;
-
   transform: translateX(-80px);
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+    gap: 40px;
+  }
 }
 
 .founderImg1 img {
@@ -43,19 +59,34 @@
   letter-spacing: -0.03em;
   font-style: normal;
   margin-left: 20px;
-}
 
-.textBlock h2 {
-  margin-bottom: 20px;
-  font-size: 70px;
-  line-height: 69px;
-  color: #FBFBFB;
-}
+  h2 {
+    margin-bottom: 20px;
+    font-size: 70px;
+    line-height: 69px;
+    color: #FBFBFB;
+  }
 
-.textBlock p {
-  font-size: 23px;
-  line-height: 28px;
-  color: rgba(251, 251, 251, 0.6);
+  p {
+    font-size: 23px;
+    line-height: 28px;
+    color: rgba(251, 251, 251, 0.6);
+  }
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    text-align: center;
+
+    h2 {
+      font-size: 50px;
+      line-height: 52px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
 }
 
 .decorativeText {
@@ -64,11 +95,53 @@
   bottom: -10px;
   z-index: 2;
   pointer-events: none;
-
   font-family: var(--font-imperial-script);
   font-style: normal;
   font-weight: 400;
   font-size: 306px;
   line-height: 322px;
   color: #242424;
+
+  @media (max-width: 900px) {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    font-size: 150px;
+    line-height: 160px;
+    opacity: 0.2;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .imagesWrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .founderImg2 img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .founderImg1 img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    z-index: 2;
+  }
+}
+
+h2 br {
+  display: inline;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
