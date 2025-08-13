@@ -8,7 +8,7 @@
   padding-bottom: 20px;
   z-index: 999;
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     padding-top: 230px;
   }
 
@@ -29,8 +29,8 @@
       font-size: 16px;
       letter-spacing: -0.03em;
 
-      @media(max-width: 900px){
-        font-size: 16px;
+      @media(max-width: 1025px){
+        font-size: 13px;
       }
 
       @media(max-width: 500px){
@@ -42,7 +42,7 @@
         color: #202020;
         filter: blur(2.5px);
 
-        @media(max-width: 900px){
+        @media(max-width: 1025px){
           font-size: 30px;
           filter: blur(1.7px);
         }
@@ -59,7 +59,7 @@
 .scrolled {
   padding-top: 40px;
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     padding-top: 90px;
   }
 

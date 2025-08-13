@@ -11,7 +11,7 @@
   border-radius: 35px;
   z-index: 10;
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     bottom: 330px;
     left: 40px;
     width: 420px;
@@ -67,7 +67,7 @@
   background-position: center;
   transition: transform 0.5s linear;
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     width: 104px;
     height: 104px;
   }

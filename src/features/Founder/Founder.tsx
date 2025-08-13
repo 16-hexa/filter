@@ -6,6 +6,13 @@ export const Founder = () => {
     return (
         <div className={styles.container} id="founder">
             <div className={styles.grid}>
+                <div className={styles.founderImg1}>
+                    <img src={founderImg1} alt="Ильдар Габидуллин на улице" />
+                </div>
+                <div className={styles.founderImg2}>
+                    <img src={founderImg2} alt="Ильдар Габидуллин сидит у стены" />
+                </div>
+
                 <div className={styles.imagesWrapper}>
                     <div className={styles.founderImg2}>
                         <img src={founderImg2} alt="Ильдар Габидуллин сидит у стены" />
@@ -13,8 +20,9 @@ export const Founder = () => {
                     <div className={styles.founderImg1}>
                         <img src={founderImg1} alt="Ильдар Габидуллин на улице" />
                     </div>
-                    <div className={styles.decorativeText}>Style</div>
                 </div>
+                <div className={styles.decorativeText}>Style</div>
+
                 <div className={styles.textBlock}>
                     <h2>Ильдар<br /> Габидуллин</h2>
                     <p>

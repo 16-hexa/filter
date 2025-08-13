@@ -16,7 +16,7 @@
   font-weight: 400;
   color: var(--grey);
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     font-size: 250px;
     top: -5%;
   }
@@ -39,7 +39,7 @@
   font-weight: 400;
   color: var(--grey);
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     font-size: 250px;
     top: 78vh;
   }
@@ -60,7 +60,7 @@
   filter: blur(10px);
   z-index: 1;
 
-  @media(max-width: 900px){
+  @media(max-width: 1025px){
     filter: blur(5px);
   }
 
