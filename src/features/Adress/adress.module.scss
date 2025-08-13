@@ -36,6 +36,22 @@
   }
 }
 
+//.photo_container {
+//  display: flex;
+//  justify-content: center;
+//  align-items: flex-start;
+//  gap: 60px;
+//  flex-wrap: wrap;
+//
+//  @media(max-width: 1025px){
+//    gap: 40px;
+//  }
+//
+//  @media(max-width: 500px){
+//    gap: 20px;
+//  }
+//}
+
 .photo_container {
   display: flex;
   justify-content: center;
@@ -43,12 +59,8 @@
   gap: 60px;
   flex-wrap: wrap;
 
-  @media(max-width: 1025px){
-    gap: 40px;
-  }
-
-  @media(max-width: 500px){
-    gap: 20px;
+  @media(max-width: 500px) {
+    display: none; // скрываем на мобилке
   }
 }
 
@@ -92,4 +104,52 @@
   @media(max-width: 1025px){
     font-size: 16px;
   }
+
+  @media(max-width: 500px){
+    margin-top: 15px;
+  }
 }
+
+
+.slider {
+  display: none;
+  align-items: center;
+  gap: 15px;
+
+  @media(max-width: 500px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 390px;
+  height: auto;
+  object-fit: cover;
+
+  @media(max-width: 1025px){
+    width: 200px;
+  }
+
+  @media(max-width: 500px){
+    width: 100%;
+    max-width: 390px;
+  }
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--dark-grey);
+  margin: 0 20px;
+}
+
