@@ -2,6 +2,10 @@
   position: relative;
   padding: 200px 40px;
   overflow: hidden;
+
+  @media(max-width: 1025px){
+    padding: 120px 80px;
+  }
 }
 
 .backgroundText{
@@ -14,6 +18,13 @@
   font-size: 300px;
   color: rgba(231, 22, 28, 0.78);
   filter: blur(6.5px);
+
+  @media(max-width: 1025px){
+    font-size: 250px;
+    top: -40px;
+    filter: blur(4.5px);
+    z-index: 0;
+  }
 }
 
 .decorativeLine {
@@ -34,6 +45,10 @@
   gap: 25px;
   position: relative;
 
+  @media(max-width: 1025px){
+    gap: 15px;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -44,11 +59,19 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+
+  @media(max-width: 1025px){
+    gap: 15px;
+  }
 }
 
 .image {
   z-index: 2;
   width: 350px;
+
+  @media(max-width: 1025px){
+    width: 250px;
+  }
 }
 
 .imageSmall {
@@ -57,6 +80,10 @@
   width: 280px;
   height: 362px;
 
+  @media(max-width: 1025px){
+    width: 200px;
+    height: 242px;
+  }
 }
 
 .description {
@@ -67,6 +94,12 @@
   letter-spacing: -0.03em;
   color: var(--grey);
   width: 340px;
+
+  @media(max-width: 1025px){
+    width: 280px;
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 .brandLink {
