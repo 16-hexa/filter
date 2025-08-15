@@ -177,6 +177,13 @@
     fill: none;
   }
 
+  @media(max-width: 1025px){
+    width: 121px;
+    height: 34px;
+    left: -22px;
+    bottom: 85%;
+  }
+
   @media(max-width: 767px){
     width: 121px;
     height: 34px;
