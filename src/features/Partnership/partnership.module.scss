@@ -26,6 +26,12 @@
     top: -100px;
     right: 10px;
   }
+
+  @media(max-width: 768px){
+    font-size: 130px;
+    top: -100px;
+    right: 10px;
+  }
 }
 
 .back{
@@ -59,6 +65,15 @@
     padding: 25px 24px;
     border-radius: 20px;
     width: 330px;
+    gap: 16px;
+  }
+
+  @media(max-width: 768px){
+    top: 54%;
+    right: 35px;
+    padding: 23px 21px;
+    border-radius: 20px;
+    width: 300px;
     gap: 16px;
   }
 }
