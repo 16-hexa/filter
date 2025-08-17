@@ -21,6 +21,12 @@
     top: -5%;
   }
 
+  @media(max-width: 768px){
+    font-size: 250px;
+    top: -5%;
+    left: -40px;
+  }
+
   @media(max-width: 500px){
     font-size: 150px;
     bottom: 80vh;
@@ -42,6 +48,12 @@
   @media(max-width: 1025px){
     font-size: 250px;
     top: 78vh;
+  }
+
+  @media(max-width: 768px){
+    font-size: 190px;
+    top: 80vh;
+    right: 10rem;
   }
 
   @media(max-width: 500px){
