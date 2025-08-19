@@ -16,6 +16,10 @@
     padding-top: 200px;
   }
 
+  @media(max-width: 375px){
+    padding-top: 160px;
+  }
+
   .nav {
     display: flex;
     justify-content: space-around;

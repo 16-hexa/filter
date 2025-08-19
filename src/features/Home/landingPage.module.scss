@@ -60,6 +60,12 @@
     font-size: 190px;
     top: 80vh;
   }
+
+  @media(max-width: 375px){
+    font-size: 150px;
+    top: 80vh;
+    right: 0rem;
+  }
 }
 
 .graffiti {

@@ -5,7 +5,7 @@ import logo from '@shared/images/vector/vector.svg';
 export const FooterFilter = () => {
     
     return (
-        <footer className={styles.container}>
+        <footer className={styles.container} id="contact">
             <div className={styles.mottoWrapper}>
                 <span className={styles.motto}>coffee is my love</span>
             </div>
