@@ -12,6 +12,10 @@
   @media(max-width: 1025px){
     padding: 46px 44px;
   }
+
+  @media(max-width: 375px){
+    padding: 26px 24px;
+  }
 }
 
 .mottoWrapper {
@@ -33,6 +37,10 @@
   @media(max-width: 1025px){
     font-size: 165px;
   }
+
+  @media(max-width: 375px){
+    font-size: 75px;
+  }
 }
 
 .columns {
@@ -48,6 +56,11 @@
     column-gap: 15px;
     row-gap: 32px;
   }
+
+  @media(max-width: 375px){
+    column-gap: 14px;
+    row-gap: 25px;
+  }
 }
 
 .link{
@@ -60,6 +73,10 @@
   @media(max-width: 1025px){
     font-size: 14px;
   }
+
+  @media(max-width: 375px){
+    font-size: 12px;
+  }
 }
 
 .column {
@@ -71,6 +88,11 @@
   @media(max-width: 1025px){
     gap: 5px;
     font-size: 13px;
+  }
+
+  @media(max-width: 376px){
+    gap: 4px;
+    font-size: 10px;
   }
 }
 
@@ -98,6 +120,18 @@
     padding: 11px 12px;
     font-size: 13px;
   }
+
+  @media(max-width: 376px){
+    margin-top: 1px;
+    border-radius: 8px;
+    padding: 9px 11px;
+    font-size: 11px;
+
+    &::placeholder {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
 }
 
 .bottomRow {
@@ -114,6 +148,11 @@
     gap: 5px;
     font-size: 11px;
   }
+
+  @media(max-width: 376px){
+    gap: 4px;
+    font-size: 10px;
+  }
 }
 
 .newsletterColumn {
@@ -126,6 +165,11 @@
   @media(max-width: 1025px){
     gap: 6px;
     font-size: 12px;
+  }
+
+  @media(max-width: 376px){
+    gap: 4px;
+    font-size: 10px;
   }
 }
 
@@ -142,6 +186,11 @@
   @media(max-width: 1025px){
     gap: 7px;
     font-size: 13px;
+  }
+
+  @media(max-width: 376px){
+    gap: 4px;
+    font-size: 10px;
   }
 }
 
@@ -162,10 +211,19 @@
     @media(max-width: 1025px){
       font-size: 10px;
     }
+
+    @media(max-width: 376px){
+      font-size: 8px;
+    }
   }
 
   @media(max-width: 1025px){
     gap: 2px;
+  }
+
+  @media(max-width: 376px){
+    gap: 0px;
+    font-size: 10px;
   }
 }
 
@@ -185,6 +243,10 @@
   @media(max-width: 1025px){
     gap: 4px;
   }
+
+  @media(max-width: 376px){
+    gap: 2px;
+  }
 }
 
 .brand {
@@ -200,6 +262,10 @@
   &:hover + .logo {
     opacity: 1;
     stroke-dashoffset: 0;
+  }
+
+  @media(max-width: 376px){
+    font-size: 11px;
   }
 }
 
@@ -229,6 +295,12 @@
   flex-direction: column;
   gap: 8px;
   font-size: 14px;
+
+  @media(max-width: 376px){
+    gap: 2px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
 }
 
 .send{
@@ -238,4 +310,8 @@
   line-height: 21px;
   letter-spacing: -0.03em;
   color: var(--white-50);
+
+  @media(max-width: 376px){
+    font-size: 11px;
+  }
 }
