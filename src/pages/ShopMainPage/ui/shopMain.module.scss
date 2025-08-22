@@ -1,4 +1,28 @@
-.container{
-  background: var(--background);
-  padding: 0 190px;
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background: url('@shared/images/back/shopBack.png') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-imperial-script);
+  font-weight: 400;
+  font-size: 220px;
+  line-height: 1;
+  color: var(--grey);
+  z-index: 1;
+  white-space: nowrap;
 }
