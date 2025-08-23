@@ -1,3 +1,11 @@
+.main_cointainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
 .container {
   position: relative;
   width: 100vw;
@@ -27,32 +35,28 @@
   white-space: nowrap;
 }
 
-.color1{
-  height: 500px;
-  background: #202020;
+.information{
+  padding: 120px 180px;
 }
 
-.color2{
-  height: 500px;
-  background: #E7161C;
+.photo_container{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 34px;
 }
 
-.color3{
-  height: 500px;
-  background: white;
+.photo{
+  width: 520px;
 }
 
-.color4{
-  height: 500px;
-  background: wheat;
-}
-
-.color5{
-  height: 500px;
-  background: gold;
-}
-
-.color6{
-  height: 500px;
-  background: plum;
+.text_container{
+  flex-direction: column;
+  text-align: right;
+  display: flex;
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  color: var(--grey);
 }
