@@ -22,6 +22,10 @@ export const ShopMainPage = () => {
                     <p>SUMMER 2025</p>
                 </div>
             </div>
+
+            <div className={styles.information}>
+
+            </div>
         </div>
     )
 }
