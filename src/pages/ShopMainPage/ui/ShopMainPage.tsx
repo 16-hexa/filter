@@ -1,6 +1,10 @@
 import styles from './shopMain.module.scss';
 import pht1 from '@shared/images/shop/IMG_6003.png';
 import pht2 from '@shared/images/shop/IMG_5997.png';
+import head from '@shared/images/shop/IMG_6006.png';
+import hoodie from '@shared/images/shop/IMG_5970.png';
+import zips from '@shared/images/shop/IMG_6008.png';
+import sweaters from '@shared/images/shop/IMG_6009.png'
 
 export const ShopMainPage = () => {
     return (
@@ -23,8 +27,13 @@ export const ShopMainPage = () => {
                 </div>
             </div>
 
-            <div className={styles.information}>
+            <p className={styles.category}>категория</p>
 
+            <div className={styles.category_information}>
+                <img src={head} className={styles.category_photo} />
+                <img src={hoodie} className={styles.category_photo} />
+                <img src={zips} className={styles.category_photo} />
+                <img src={sweaters} className={styles.category_photo} />
             </div>
         </div>
     )
