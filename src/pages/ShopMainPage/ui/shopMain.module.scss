@@ -67,7 +67,7 @@
   letter-spacing: -0.04em;
   color: var(--grey);
   margin-top: 20px;
-  margin-bottom: 29px;
+  margin-bottom: 9px;
   text-align: left;
   align-self: flex-start;
   padding: 0 227px;
@@ -82,4 +82,15 @@
 .category_photo{
   width: 217px;
   height: 315px;
+}
+
+.clothes{
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+  color: var(--grey);
+  text-align: center;
+  margin-top: 9px;
 }

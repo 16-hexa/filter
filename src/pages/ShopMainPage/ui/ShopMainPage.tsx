@@ -30,10 +30,25 @@ export const ShopMainPage = () => {
             <p className={styles.category}>категория</p>
 
             <div className={styles.category_information}>
-                <img src={head} className={styles.category_photo} />
-                <img src={hoodie} className={styles.category_photo} />
-                <img src={zips} className={styles.category_photo} />
-                <img src={sweaters} className={styles.category_photo} />
+                <div >
+                    <img src={head} className={styles.category_photo} />
+                    <p className={styles.clothes}>головной убор</p>
+                </div>
+
+                <div>
+                    <img src={hoodie} className={styles.category_photo} />
+                    <p className={styles.clothes}>худи</p>
+                </div>
+
+                <div>
+                    <img src={zips} className={styles.category_photo} />
+                    <p className={styles.clothes}>зипки</p>
+                </div>
+
+                <div>
+                    <img src={sweaters} className={styles.category_photo} />
+                    <p className={styles.clothes}>свитера</p>
+                </div>
             </div>
         </div>
     )
