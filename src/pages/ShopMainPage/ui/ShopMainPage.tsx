@@ -4,7 +4,14 @@ import pht2 from '@shared/images/shop/IMG_5997.png';
 import head from '@shared/images/shop/IMG_6006.png';
 import hoodie from '@shared/images/shop/IMG_5970.png';
 import zips from '@shared/images/shop/IMG_6008.png';
-import sweaters from '@shared/images/shop/IMG_6009.png'
+import sweaters from '@shared/images/shop/IMG_6009.png';
+
+const categories = [
+    { img: head, label: "головной убор" },
+    { img: hoodie, label: "худи" },
+    { img: zips, label: "зипки" },
+    { img: sweaters, label: "свитера" },
+];
 
 export const ShopMainPage = () => {
     return (
@@ -30,25 +37,12 @@ export const ShopMainPage = () => {
             <p className={styles.category}>категория</p>
 
             <div className={styles.category_information}>
-                <div >
-                    <img src={head} className={styles.category_photo} />
-                    <p className={styles.clothes}>головной убор</p>
-                </div>
-
-                <div>
-                    <img src={hoodie} className={styles.category_photo} />
-                    <p className={styles.clothes}>худи</p>
-                </div>
-
-                <div>
-                    <img src={zips} className={styles.category_photo} />
-                    <p className={styles.clothes}>зипки</p>
-                </div>
-
-                <div>
-                    <img src={sweaters} className={styles.category_photo} />
-                    <p className={styles.clothes}>свитера</p>
-                </div>
+                {categories.map((item, index) => (
+                    <div key={index}>
+                        <img src={item.img} className={styles.category_photo} alt={item.label} />
+                        <p className={styles.clothes}>{item.label}</p>
+                    </div>
+                ))}
             </div>
         </div>
     )
