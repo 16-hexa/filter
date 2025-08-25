@@ -5,6 +5,7 @@ import head from '@shared/images/shop/IMG_6006.png';
 import hoodie from '@shared/images/shop/IMG_5970.png';
 import zips from '@shared/images/shop/IMG_6008.png';
 import sweaters from '@shared/images/shop/IMG_6009.png';
+import video from '@shared/video/Запись экрана 2025-08-25 в 11.49.06.mp4';
 
 const categories = [
     { img: head, label: "головной убор" },
@@ -44,6 +45,17 @@ export const ShopMainPage = () => {
                     </div>
                 ))}
             </div>
+
+            <video
+                src={video}
+                autoPlay
+                muted
+                loop
+                playsInline
+                style="width: 100%; height: auto; display: block;"
+            >
+            </video>
+
         </div>
     )
 }
