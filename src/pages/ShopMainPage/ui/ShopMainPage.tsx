@@ -52,7 +52,7 @@ export const ShopMainPage = () => {
                 muted
                 loop
                 playsInline
-                style="width: 100%; height: auto; display: block;"
+                style={{ width: "100%", height: "auto", display: "block", padding: "100px 0" }}
             >
             </video>
 
