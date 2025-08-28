@@ -1,59 +1,38 @@
 import styles from './shop.module.scss';
-import { Link } from 'react-router-dom';
-import logo from '@shared/images/vector/vector.svg';
 
 export const FooterShop = () => {
-
     return (
         <footer className={styles.container} id="contact">
             <div className={styles.mottoWrapper}>
                 <span className={styles.motto}>Filter.dept</span>
             </div>
+
             <div className={styles.columns}>
                 <div className={styles.column}>
-                    <Link to='/employment' className={styles.link}>
-                        Трудоустройство
-                    </Link>
-                    <Link to='/collab' className={styles.link}>
-                        Сотрудничество
-                    </Link>
+                    <span className={styles.title}>мы в интернете</span>
+                    <span className={styles.text}>inst</span>
+                    <span className={styles.text}>telegram</span>
                 </div>
 
                 <div className={styles.column}>
-                    <Link to='/bonus' className={styles.link}>
-                        Бонусная программа
-                    </Link>
+                    <span className={styles.title}>контакты</span>
+                    <span className={styles.text}>89249282104</span>
+                    <span className={styles.text}>@filter</span>
+                    <span className={styles.text}>help@filter.ru</span>
                 </div>
 
                 <div className={styles.column}>
-                    <Link to='/shop' className={styles.link}>
-                        FILTER Shop
-                    </Link>
-                </div>
-
-                <div className={styles.newsletter}>
-                    <p className={styles.send}>Рассылка</p>
-                    <input type="email" placeholder="Email" className={styles.emailInput} />
+                    <span className={styles.title}>адреса</span>
+                    <span className={styles.text}>ул. Мусина, 43</span>
+                    <span className={styles.text}>ул. Щапово, 1а</span>
                 </div>
             </div>
 
-
             <div className={styles.bottomRow}>
-
                 <div className={styles.copyright}>
-                    <span>© 2025 </span>
-                    <Link to="/brand" className={styles.brandLink}>
-                        <span className={styles.brand}>16hexa</span>
-                        <img src={logo} className={styles.logo} />
-                    </Link>
-                </div>
-
-                <div className={styles.links}>
-                    <a href="#">Политика в отношении обработки персональных данных</a>
-                    <a href="#">Пользовательское соглашение</a>
+                    <span>© Все права защищены</span>
                 </div>
             </div>
         </footer>
     );
 };
-
