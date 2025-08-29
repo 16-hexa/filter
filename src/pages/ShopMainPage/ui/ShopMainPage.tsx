@@ -6,6 +6,8 @@ import hoodie from '@shared/images/shop/IMG_5970.png';
 import zips from '@shared/images/shop/IMG_6008.png';
 import sweaters from '@shared/images/shop/IMG_6009.png';
 import video from '@shared/video/Запись экрана 2025-08-25 в 11.49.06.mp4';
+import {ExpandableImage} from "@shared/components";
+import {useState} from "react";
 
 const categories = [
     { img: head, label: "головной убор" },
@@ -15,6 +17,13 @@ const categories = [
 ];
 
 export const ShopMainPage = () => {
+
+    const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+    const toggleImage = (index: number) => {
+        setExpandedIndex(prev => prev === index ? null : index);
+    };
+
     return (
         <div className={styles.main_cointainer}>
             <div className={styles.container}>
@@ -56,6 +65,17 @@ export const ShopMainPage = () => {
             >
             </video>
 
+            <div style={{ display: "flex", gap: "20px", marginBottom: "100px" }}>
+                {Array.from({ length: 8 }).map((_, index) => (
+                    <ExpandableImage
+                        key={index}
+                        src="src/shared/images/shop/IMG_5970.png"
+                        alt="Supreme stack"
+                        expanded={expandedIndex === index}
+                        onToggle={() => toggleImage(index)}
+                    />
+                ))}
+            </div>
         </div>
     )
 }
