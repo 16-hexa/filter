@@ -76,6 +76,7 @@ export const ShopMainPage = () => {
                     />
                 ))}
             </div>
+
         </div>
     )
 }

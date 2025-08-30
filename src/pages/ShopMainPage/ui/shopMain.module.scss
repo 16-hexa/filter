@@ -32,6 +32,15 @@
   color: var(--grey);
   z-index: 1;
   white-space: nowrap;
+
+  @media(max-width: 1025px){
+    font-size: 200px;
+  }
+
+  @media(max-width: 500px){
+    font-size: 180px;
+  }
+
 }
 
 .information{
