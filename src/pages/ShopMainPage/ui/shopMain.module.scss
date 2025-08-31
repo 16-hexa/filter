@@ -34,27 +34,39 @@
   white-space: nowrap;
 
   @media(max-width: 1025px){
-    font-size: 200px;
+    font-size: 340px;
   }
 
-  @media(max-width: 500px){
-    font-size: 180px;
+  @media(max-width: 600px){
+    font-size: 70px;
   }
-
 }
 
 .information{
   padding: 120px 180px;
+
+  @media(max-width: 1025px){
+    padding: 60px 80px;
+  }
+
+  @media(max-width: 600px){
+    padding: 120px 180px;
+  }
 }
 
 .photo_container{
   display: flex;
   gap: 12px;
   margin-bottom: 34px;
+
+  @media(max-width: 700px){
+    flex-direction: column;
+  }
 }
 
 .photo{
-  width: 520px;
+  width: 100%;
+  max-width: 520px;
 }
 
 .text_container{
