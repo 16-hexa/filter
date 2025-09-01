@@ -34,7 +34,7 @@
   white-space: nowrap;
 
   @media(max-width: 1025px){
-    font-size: 340px;
+    font-size: 140px;
   }
 
   @media(max-width: 600px){
@@ -59,6 +59,11 @@
   gap: 12px;
   margin-bottom: 34px;
 
+  @media(max-width: 1025px){
+    gap: 36px;
+    margin-bottom: 20px;
+  }
+
   @media(max-width: 700px){
     flex-direction: column;
   }
@@ -67,6 +72,10 @@
 .photo{
   width: 100%;
   max-width: 520px;
+
+  @media(max-width: 1025px){
+    max-width: 300px;
+  }
 }
 
 .text_container{
