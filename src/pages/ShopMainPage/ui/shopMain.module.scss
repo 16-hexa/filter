@@ -50,7 +50,7 @@
   }
 
   @media(max-width: 600px){
-    padding: 120px 180px;
+    padding: 42px 46px;
   }
 }
 
@@ -74,7 +74,11 @@
   max-width: 520px;
 
   @media(max-width: 1025px){
-    max-width: 300px;
+    max-width: 310px;
+  }
+
+  @media(max-width: 700px){
+    max-width: 510px !important;
   }
 }
 
@@ -101,17 +105,48 @@
   text-align: left;
   align-self: flex-start;
   padding: 0 227px;
+
+  @media(max-width: 1025px){
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0 77px;
+  }
+
+  @media(max-width: 700px){
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+  }
 }
 
 .category_information{
   padding: 20px 180px;
   gap: 60px;
   display: flex;
+
+  @media(max-width: 1025px){
+    padding: 20px 67px 0 67px;
+    gap: 38px;
+  }
+
+  @media(max-width: 700px){
+    padding: 20px 180px;
+    gap: 60px;
+  }
 }
 
 .category_photo{
   width: 217px;
   height: 315px;
+
+  @media(max-width: 1025px){
+    width: 135px;
+    height: 196px;
+  }
 }
 
 .clothes{
@@ -123,4 +158,9 @@
   color: var(--grey);
   text-align: center;
   margin-top: 9px;
+
+  @media(max-width: 1025px){
+    font-size: 11px;
+    margin-top: 6px;
+  }
 }
