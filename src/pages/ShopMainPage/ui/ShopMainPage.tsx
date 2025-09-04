@@ -65,8 +65,8 @@ export const ShopMainPage = () => {
             >
             </video>
 
-            <div style={{ display: "flex", gap: "20px", marginBottom: "100px" }}>
-                {Array.from({ length: 8 }).map((_, index) => (
+            <div className={styles.expandable}>
+                {Array.from({ length: 7 }).map((_, index) => (
                     <ExpandableImage
                         key={index}
                         src="src/shared/images/shop/IMG_5970.png"

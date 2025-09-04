@@ -133,11 +133,6 @@
     gap: 38px;
   }
 
-  //@media(max-width: 900px){
-  //    padding: 20px 67px 0 67px;
-  //    gap: 38px;
-  //  }
-
   @media(max-width: 700px){
     padding: 20px 180px;
     gap: 60px;
@@ -167,5 +162,17 @@
   @media(max-width: 1025px){
     font-size: 11px;
     margin-top: 6px;
+  }
+}
+
+.expandable {
+  display: flex;
+  gap: 33px;
+  margin-bottom: 100px;
+
+  @media(max-width: 1025px){
+    gap: 14px;
+    margin-bottom: 50px;
+    margin-top: -50px;
   }
 }
