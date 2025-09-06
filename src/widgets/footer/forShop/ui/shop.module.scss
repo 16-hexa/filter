@@ -11,7 +11,8 @@
   min-height: 350px;
 
   @media(max-width: 1025px){
-    padding: 46px 44px;
+    padding: 36px 59px 25px 78px;
+    min-height: 260px;
   }
 
   @media(max-width: 500px){
@@ -29,6 +30,10 @@
   left: 0;
   z-index: 0;
   pointer-events: none;
+
+  @media(max-width: 1025px){
+    top: 18%;
+  }
 }
 
 .motto {
@@ -40,7 +45,7 @@
   -webkit-text-stroke: 1px rgba(251, 251, 251, 0.28);
 
   @media(max-width: 1025px){
-    font-size: 165px;
+    font-size: 230px;
   }
 
   @media(max-width: 500px){
@@ -60,9 +65,8 @@
   z-index: 3;
 
   @media(max-width: 1025px){
-    gap: 15px;
+    gap: 57px;
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
 
   @media(max-width: 500px){
@@ -86,6 +90,10 @@
   line-height: 23px;
   letter-spacing: -0.03em;
   color: #FBFBFB;
+
+  @media(max-width: 1025px){
+    margin-bottom: 7px;
+  }
 }
 
 .text {
