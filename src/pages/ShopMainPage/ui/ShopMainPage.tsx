@@ -24,6 +24,9 @@ export const ShopMainPage = () => {
         setExpandedIndex(prev => prev === index ? null : index);
     };
 
+    const isMobile = window.innerWidth <= 700;
+    const itemsCount = isMobile ? 3 : 7;
+
     return (
         <div className={styles.main_cointainer}>
             <div className={styles.container}>
@@ -55,18 +58,20 @@ export const ShopMainPage = () => {
                 ))}
             </div>
 
-            <video
-                src={video}
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ width: "100%", height: "auto", display: "block", padding: "100px 0" }}
-            >
-            </video>
+            <div className={styles.video_wrapper}>
+                <video
+                    src={video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className={styles.video}
+                >
+                </video>
+            </div>
 
             <div className={styles.expandable}>
-                {Array.from({ length: 7 }).map((_, index) => (
+                {Array.from({ length: itemsCount }).map((_, index) => (
                     <ExpandableImage
                         key={index}
                         src="src/shared/images/shop/IMG_5970.png"
