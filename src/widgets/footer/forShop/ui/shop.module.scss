@@ -16,11 +16,7 @@
   }
 
   @media(max-width: 500px){
-    padding: 36px 34px;
-  }
-
-  @media(max-width: 375px){
-    padding: 26px 24px;
+    padding: 30px 25px 0 25px;
   }
 }
 
@@ -33,6 +29,14 @@
 
   @media(max-width: 1025px){
     top: 25%;
+  }
+
+  @media(max-width: 500px){
+    top: auto;
+    bottom: -10%;
+    width: 100%;
+    left: -2%;
+    text-align: center;
   }
 }
 
@@ -49,11 +53,7 @@
   }
 
   @media(max-width: 500px){
-    font-size: 75px;
-  }
-
-  @media(max-width: 375px){
-    font-size: 75px;
+    font-size: 110px;
   }
 }
 
