@@ -1,6 +1,17 @@
 import styles from './item.module.scss'
 import {FooterShop, Shortheader} from "@/widgets";
 import item from '@shared/images/shop/IMG_6008.png';
+import head from "@shared/images/shop/ChatGPT Image 9 июня 2025 г., 20_10_15 3.png";
+import hoodie from "@shared/images/shop/ChatGPT Image 9 июня 2025 г., 20_10_15 2.png";
+import zips from "@shared/images/shop/ChatGPT Image 9 июня 2025 г., 20_10_15 1.png";
+import sweaters from "@shared/images/shop/ChatGPT Image 9 июня 2025 г., 20_10_15 4.png";
+
+const categories = [
+    { img: head, label: "1" },
+    { img: hoodie, label: "2" },
+    { img: zips, label: "3" },
+    { img: sweaters, label: "4" },
+];
 
 export const ItemPage = () => {
     return(
@@ -22,6 +33,15 @@ export const ItemPage = () => {
 
                         <h3 className={styles.name}>Shrimp collection/T-shirts/women/</h3>
                     </div>
+                </div>
+
+                <div className={styles.category_information}>
+                    {categories.map((item, index) => (
+                        <div key={index}>
+                            <img src={item.img} className={styles.category_photo} alt={item.label} />
+                            <p className={styles.clothes}>{item.label}</p>
+                        </div>
+                    ))}
                 </div>
             </main>
             <FooterShop />
