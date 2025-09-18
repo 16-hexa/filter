@@ -9,7 +9,8 @@
   padding-left: 133px;
 
   @media(max-width: 1025px){
-    padding-top: 90px;
+    padding-top: 60px;
+    padding-left: 43px;
   }
 
   @media(max-width: 500px){
@@ -25,9 +26,13 @@
     align-items: flex-start;
     gap: 30px;
 
+    @media(max-width: 1025px){
+      gap: 11px;
+    }
+
     a {
       text-decoration: none;
-      color: var(--grey);
+      color: #FBFBFB;
       font-weight: 400;
       font-family: var(--font-roboto-condensed);
       font-size: 16px;

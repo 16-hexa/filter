@@ -17,6 +17,10 @@
 .photo {
   height: 881px;
   object-fit: cover;
+
+  @media(max-width: 1025px){
+    height: 531px;
+  }
 }
 
 .right {
@@ -27,6 +31,10 @@
   flex-direction: column;
   justify-content: center;
   color: var(--grey);
+
+  @media(max-width: 1025px){
+    max-width: 320px;
+  }
 }
 
 .desc{
@@ -37,6 +45,12 @@
   line-height: 23px;
   letter-spacing: -0.04em;
   text-align: center;
+
+  @media(max-width: 1025px){
+    margin-bottom: 220px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .values{
@@ -46,6 +60,11 @@
   line-height: 23px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+
+  @media(max-width: 1025px){
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
 
 .name{
@@ -54,6 +73,11 @@
   font-weight: 600;
   font-size: 40px;
   letter-spacing: -0.04em;
+
+  @media(max-width: 1025px){
+    font-size: 22px;
+    margin-top: 25px;
+  }
 }
 
 .category_information{
