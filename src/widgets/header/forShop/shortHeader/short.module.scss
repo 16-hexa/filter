@@ -30,6 +30,12 @@
       gap: 11px;
     }
 
+    @media(max-width: 500px){
+      gap: 21px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
     a {
       text-decoration: none;
       color: #FBFBFB;
@@ -43,7 +49,8 @@
       }
 
       @media(max-width: 500px){
-        font-size: 10px;
+        font-size: 13px;
+        color: #060A0B;
       }
 
       &:hover{
