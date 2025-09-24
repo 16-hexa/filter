@@ -1,0 +1,25 @@
+.container{
+  padding: 190px 130px 139px 130px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo{
+  max-width: 1180px;
+}
+
+.logo{
+  font-family: 'Imperial Script';
+  font-weight: 400;
+  font-size: 320px;
+  line-height: 387px;
+  color: #FBFBFB;
+}
