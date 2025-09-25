@@ -12,6 +12,16 @@ export const Catalog = () => {
 
                 <p className={styles.logo}>Filter.dept</p>
             </div>
+
+            <div className={styles.filter_container}>
+                <button className={styles.button_filter}>
+                    фильтр
+                </button>
+
+                <button className={styles.button_filter}>
+                    сортировать по возрастанию цены
+                </button>
+            </div>
         </div>
     )
 }
