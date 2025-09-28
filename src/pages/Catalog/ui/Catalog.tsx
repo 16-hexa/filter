@@ -23,8 +23,8 @@ export const Catalog = () => {
                 </button>
             </div>
 
-            <div>
-                болею я не хочу делать камиты
+            <div className={styles.catalog}>
+
             </div>
         </div>
     )

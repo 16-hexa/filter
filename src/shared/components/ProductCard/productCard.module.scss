@@ -1,0 +1,27 @@
+.container{
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  color: var(--grey);
+}
+
+.photo{
+  max-width: 350px;
+}
+
+.name{
+  margin-top: 27px;
+  margin-bottom: 3px;
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.04em;
+}
+
+.price{
+  font-family: var(--font-roboto-condensed-medium);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.04em;
+}
