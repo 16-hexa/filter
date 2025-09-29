@@ -1,12 +1,13 @@
 .container{
   display: flex;
-  justify-content: right;
+  text-align: right;
   flex-direction: column;
   color: var(--grey);
 }
 
 .photo{
-  max-width: 350px;
+  max-width: 320px;
+  height: 320px;
 }
 
 .name{
