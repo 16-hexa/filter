@@ -41,7 +41,7 @@ export const Catalog = () => {
                 </div>
             </div>
 
-            {/*<FooterShop />*/}
+            <FooterShop />
         </>
     )
 }
