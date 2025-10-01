@@ -3,6 +3,8 @@ import mainPhoto from '@shared/images/shop/catalog_main_photo.png'
 import {products} from "@pages/Catalog/data/products.ts";
 import {ProductCard} from "@shared/components";
 import {FooterShop, HeaderShop} from "@/widgets";
+import React from "react";
+import {Link} from "react-router-dom";
 
 export const Catalog = () => {
     return(
@@ -31,12 +33,14 @@ export const Catalog = () => {
 
                 <div className={styles.catalog}>
                     {products.map((item, index) => (
-                        <ProductCard
-                            key={index}
-                            photo={item.photo}
-                            name={item.name}
-                            price={item.price}
-                        />
+                        <Link to="/item">
+                            <ProductCard
+                                key={index}
+                                photo={item.photo}
+                                name={item.name}
+                                price={item.price}
+                            />
+                        </Link>
                     ))}
                 </div>
             </div>
