@@ -56,4 +56,10 @@
   width: 100%;
   margin-top: 60px;
   justify-content: space-between;
+
+  @media(max-width: 1025px){
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 66px 58px;
+    margin-top: 40px;
+  }
 }
