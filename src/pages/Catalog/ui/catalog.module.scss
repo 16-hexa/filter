@@ -8,7 +8,7 @@
   background: var(--background);
 
   @media(max-width: 1025px){
-    padding: 180px 90px 89px 90px;
+    padding: 140px 90px 89px 90px;
   }
 }
 
@@ -37,7 +37,7 @@
   pointer-events: none;
 
   @media(max-width: 1025px){
-    font-size: 220px;
+    font-size: 20vw;
     line-height: 0;
   }
 }
@@ -47,6 +47,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media(max-width: 1025px){
+    margin-top: 80px;
+  }
 }
 
 .button_filter{
@@ -56,6 +60,11 @@
   line-height: 23px;
   letter-spacing: -0.04em;
   color: var(--grey);
+
+  @media(max-width: 1025px){
+    font-size: 14px;
+    line-height: 0;
+  }
 }
 
 .catalog {
