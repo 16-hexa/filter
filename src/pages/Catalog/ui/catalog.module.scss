@@ -44,6 +44,11 @@
     font-size: 20vw;
     line-height: 0;
   }
+
+  @media(max-width: 500px){
+    //font-size: 20vw;
+    //line-height: 0;
+  }
 }
 
 .filter_container {
