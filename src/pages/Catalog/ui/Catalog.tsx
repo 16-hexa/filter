@@ -1,12 +1,17 @@
 import styles from './catalog.module.scss';
 import mainPhoto from '@shared/images/shop/catalog_main_photo.png'
 import {products} from "@pages/Catalog/data/products.ts";
-import {ProductCard} from "@shared/components";
+import {PopupSideMenu, ProductCard} from "@shared/components";
 import {FooterShop, HeaderShop} from "@/widgets";
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 export const Catalog = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const openMenu = () => setIsMenuOpen(true);
+    const closeMenu = () => setIsMenuOpen(false);
+
     return(
         <>
             <HeaderShop />
@@ -22,7 +27,7 @@ export const Catalog = () => {
                 </div>
 
                 <div className={styles.filter_container}>
-                    <button className={styles.button_filter}>
+                    <button className={styles.button_filter} onClick={openMenu}>
                         фильтр
                     </button>
 
@@ -43,6 +48,12 @@ export const Catalog = () => {
                         </Link>
                     ))}
                 </div>
+            </div>
+
+            {isMenuOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
+
+            <div className={`${styles.sideMenu} ${isMenuOpen ? styles.open : ''}`}>
+                <PopupSideMenu />
             </div>
 
             <FooterShop />

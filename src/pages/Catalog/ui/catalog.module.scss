@@ -98,3 +98,24 @@
     margin-top: 30px;
   }
 }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.44);
+  z-index: 90;
+  transition: opacity 0.3s ease;
+}
+
+.sideMenu {
+  position: fixed;
+  top: 20vh;
+  left: -451px;
+  height: 100vh;
+  z-index: 100;
+  transition: left 0.3s ease;
+}
+
+.sideMenu.open {
+  left: 0;
+}
