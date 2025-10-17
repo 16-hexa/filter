@@ -1,10 +1,10 @@
 import styles from './catalog.module.scss';
-import mainPhoto from '@shared/images/shop/catalog_main_photo.png'
-import {products} from "@pages/Catalog/data/products.ts";
-import {PopupSideMenu, ProductCard} from "@shared/components";
-import {FooterShop, HeaderShop} from "@/widgets";
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import mainPhoto from '@shared/images/shop/catalog_main_photo.png';
+import { products } from "@pages/Catalog/data/products.ts";
+import { PopupSideMenu, ProductCard } from "@shared/components";
+import { FooterShop, HeaderShop } from "@/widgets";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Catalog = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,17 +12,13 @@ export const Catalog = () => {
     const openMenu = () => setIsMenuOpen(true);
     const closeMenu = () => setIsMenuOpen(false);
 
-    return(
+    return (
         <>
             <HeaderShop />
 
             <div className={styles.container}>
                 <div className={styles.logo_container}>
-                    <img
-                        src={mainPhoto}
-                        className={styles.photo}
-                    />
-
+                    <img src={mainPhoto} className={styles.photo} />
                     <p className={styles.logo}>Filter.dept</p>
                 </div>
 
@@ -38,9 +34,8 @@ export const Catalog = () => {
 
                 <div className={styles.catalog}>
                     {products.map((item, index) => (
-                        <Link to="/item">
+                        <Link to="/item" key={index}>
                             <ProductCard
-                                key={index}
                                 photo={item.photo}
                                 name={item.name}
                                 price={item.price}
@@ -53,10 +48,10 @@ export const Catalog = () => {
             {isMenuOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
 
             <div className={`${styles.sideMenu} ${isMenuOpen ? styles.open : ''}`}>
-                <PopupSideMenu />
+                <PopupSideMenu onClose={closeMenu} />
             </div>
 
             <FooterShop />
         </>
-    )
-}
+    );
+};
