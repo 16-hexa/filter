@@ -2,7 +2,7 @@ import styles from './collor.module.scss';
 
 export const CollorList = () => {
     return(
-        <div>
+        <div className={styles.list}>
             <span className={styles.color1}></span>
             <span className={styles.color2}></span>
             <span className={styles.color3}></span>
