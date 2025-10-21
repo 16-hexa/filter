@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import closeIcon from '@shared/images/popup/closeIcon.png';
+import {CollorList} from "@/widgets";
 
 type PopupSideMenuProps = {
     onClose: () => void;
@@ -21,6 +22,7 @@ export const PopupSideMenu = ({ onClose }: PopupSideMenuProps) => {
                 <div className={styles.filter_container}>
                     <section>
                         <p className={styles.title}>цвет</p>
+                        <CollorList />
                     </section>
 
                     <section>
