@@ -27,6 +27,9 @@ export const PopupSideMenu = ({ onClose }: PopupSideMenuProps) => {
 
                     <section>
                         <p className={styles.title}>тип</p>
+                        <p className={styles.text}>
+                            футболка / худи / головной убор / джинсы / юбка / джинсы
+                        </p>
                     </section>
 
                     <section>
