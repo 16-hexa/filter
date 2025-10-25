@@ -34,6 +34,9 @@ export const PopupSideMenu = ({ onClose }: PopupSideMenuProps) => {
 
                     <section>
                         <p className={styles.title}>коллекция</p>
+                        <p className={styles.text}>
+                            mon / fry / dh kolp / weryk / vbeg
+                        </p>
                     </section>
 
                     <section>
