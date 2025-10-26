@@ -41,6 +41,9 @@ export const PopupSideMenu = ({ onClose }: PopupSideMenuProps) => {
 
                     <section>
                         <p className={styles.title}>размер</p>
+                        <div>
+
+                        </div>
                     </section>
                 </div>
 
