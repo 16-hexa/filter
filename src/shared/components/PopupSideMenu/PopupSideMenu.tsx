@@ -1,12 +1,17 @@
 import styles from './style.module.scss';
 import closeIcon from '@shared/images/popup/closeIcon.png';
 import {CollorList} from "@/widgets";
+import {useState} from "react";
 
 type PopupSideMenuProps = {
     onClose: () => void;
 };
 
+const sizes = [34, 35, 36, 37, 38, 39, 40, 'xs', 's', 'm', 'l', 'xl'];
+
 export const PopupSideMenu = ({ onClose }: PopupSideMenuProps) => {
+    const [selectedSize, setSelectedSize] = useState<number | null>(null);
+
     return (
         <div className={styles.container}>
             <img
@@ -41,8 +46,18 @@ export const PopupSideMenu = ({ onClose }: PopupSideMenuProps) => {
 
                     <section>
                         <p className={styles.title}>размер</p>
-                        <div>
-
+                        <div className={styles.grid}>
+                            {sizes.map((size) => (
+                                <button
+                                    key={size}
+                                    className={`${styles.sizeButton} ${
+                                        selectedSize === size ? styles.active : ""
+                                    }`}
+                                    onClick={() => setSelectedSize(size)}
+                                >
+                                    {size}
+                                </button>
+                            ))}
                         </div>
                     </section>
                 </div>

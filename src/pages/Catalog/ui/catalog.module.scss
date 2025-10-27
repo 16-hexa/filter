@@ -109,10 +109,10 @@
 
 .sideMenu {
   position: fixed;
-  top: 9vh;
+  top: 3vh;
   left: -551px;
   height: 100vh;
-  z-index: 100;
+  z-index: 1100;
   transition: left 0.3s ease;
 }
 
