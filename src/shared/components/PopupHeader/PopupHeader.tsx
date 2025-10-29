@@ -2,7 +2,7 @@ import styles from './popup.module.scss';
 
 export const PopupHeader = () => {
     return(
-        <div>
+        <div className={styles.container}>
 
         </div>
     )
