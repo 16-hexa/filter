@@ -1,9 +1,11 @@
 import styles from './shop.module.scss';
 import {useEffect, useState} from "react";
+import {PopupHeader} from "@shared/components";
 
 export const HeaderShop = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,17 +40,24 @@ export const HeaderShop = () => {
         }
 
         requestAnimationFrame(scrollStep);
-    }
+    };
+
+    const openPopup = () => setIsPopupOpen(true);
+    const closePopup = () => setIsPopupOpen(false);
 
     return(
-        <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
-            <nav className={styles.nav}>
-                <a onClick={() => smoothScrollTo('part', 100)}>женщины</a>
-                <a onClick={() => smoothScrollTo('founder', 100)}>мужчины</a>
-                <a href="#">новинки</a>
-                <a onClick={() => smoothScrollTo('adress', 100)}>категории</a>
-                <a onClick={() => smoothScrollTo('contact', 100)}>поиск</a>
-            </nav>
-        </header>
-    )
-}
+        <>
+            <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+                <nav className={styles.nav}>
+                    <a onClick={openPopup}>женщины</a>
+                    <a onClick={openPopup}>мужчины</a>
+                    <a href="#">новинки</a>
+                    <a onClick={openPopup}>категории</a>
+                    <a onClick={() => smoothScrollTo('contact', 100)}>поиск</a>
+                </nav>
+            </header>
+
+            {isPopupOpen && <PopupHeader onClose={closePopup} />}
+        </>
+    );
+};
