@@ -52,6 +52,12 @@
           filter: blur(1.2px);
         }
       }
+
+      &.active {
+        filter: blur(2.5px);
+        font-size: 36px;
+        color: #202020;
+      }
     }
   }
 }

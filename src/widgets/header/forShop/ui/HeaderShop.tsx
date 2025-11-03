@@ -3,15 +3,14 @@ import {useEffect, useState} from "react";
 import {PopupHeader} from "@shared/components";
 
 export const HeaderShop = () => {
-
     const [isScrolled, setIsScrolled] = useState(false);
     const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState<string | null>(null);
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
-
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -34,26 +33,55 @@ export const HeaderShop = () => {
 
             window.scrollTo(0, start + distance * easeInOutQuad);
 
-            if (elapsed < duration) {
-                requestAnimationFrame(scrollStep);
-            }
+            if (elapsed < duration) requestAnimationFrame(scrollStep);
         }
 
         requestAnimationFrame(scrollStep);
     };
 
-    const openPopup = () => setIsPopupOpen(true);
-    const closePopup = () => setIsPopupOpen(false);
+    const handleClick = (name: string, cb?: () => void) => {
+        setActiveLink(name);
+        if (cb) cb();
+    };
 
-    return(
+    const openPopup = () => setIsPopupOpen(true);
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+        setActiveLink(null);
+    };
+
+    return (
         <>
             <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
                 <nav className={styles.nav}>
-                    <a onClick={openPopup}>женщины</a>
-                    <a onClick={openPopup}>мужчины</a>
-                    <a href="#">новинки</a>
-                    <a onClick={openPopup}>категории</a>
-                    <a onClick={() => smoothScrollTo('contact', 100)}>поиск</a>
+                    <a
+                        onClick={() => handleClick('women', openPopup)}
+                        className={activeLink === 'women' ? styles.active : ''}
+                    >женщины</a>
+
+                    <a
+                        onClick={() => handleClick('men', openPopup)}
+                        className={activeLink === 'men' ? styles.active : ''}
+                    >мужчины</a>
+
+                    <a
+                        onClick={() => handleClick('new')}
+                        className={activeLink === 'new' ? styles.active : ''}
+                    >новинки</a>
+
+                    <a
+                        onClick={() => handleClick('categories', openPopup)}
+                        className={activeLink === 'categories' ? styles.active : ''}
+                    >категории</a>
+
+                    <a
+                        onClick={() => {
+                            handleClick('search');
+                            smoothScrollTo('contact', 100);
+                        }}
+                        className={activeLink === 'search' ? styles.active : ''}
+                    >поиск</a>
                 </nav>
             </header>
 
