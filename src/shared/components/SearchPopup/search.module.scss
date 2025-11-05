@@ -1,0 +1,131 @@
+.container{
+  width: 551px;
+  background: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(39.5px);
+  padding: 23px;
+  color: var(--grey);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
+  z-index: 9998;
+}
+
+.title{
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  margin-top: 3rem;
+}
+
+.text{
+  margin-top: 21px;
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.filter_container {
+  width: 100%;
+  text-align: left;
+  margin-left: 73px;
+  margin-bottom: 60px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  width: 100%;
+}
+
+.button {
+  width: 280px;
+  padding: 10px 89px;
+  font-family: var(--font-roboto-condensed-light);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid var(--grey);
+  border-radius: 11px;
+  color: var(--grey);
+}
+
+.button:first-child {
+  background: transparent;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.button:last-child {
+  background: #A8A8A8;
+
+  &:hover {
+    background: #969696;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 9px 11px;
+  grid-template-columns: repeat(7, 43px);
+  padding-top: 20px;
+}
+
+.sizeButton {
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--grey);
+    color: #fff;
+  }
+
+  &.active {
+    background: var(--grey);
+    color: #fff;
+  }
+}

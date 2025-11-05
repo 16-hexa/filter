@@ -13,7 +13,7 @@ export const SearchPopup = ({ onClose }: PopupProps) => {
         <>
             <div className={styles.overlay} onClick={onClose} />
 
-            <div className={`${styles.container} ${active ? styles.expanded : ""}`}>
+            <div className={styles.container}>
                 <img
                     src={closeIcon}
                     alt="Закрыть"
@@ -22,28 +22,13 @@ export const SearchPopup = ({ onClose }: PopupProps) => {
                 />
 
                 <div className={styles.content}>
-                    <div className={styles.columns}>
-                        <div className={styles.leftCol}>
-                            {Object.keys(menu).map(item => (
-                                <p
-                                    key={item}
-                                    className={`${styles.title} ${active === item ? styles.active : ""}`}
-                                    onClick={() => setActive(item)}
-                                >
-                                    {item}
-                                </p>
-                            ))}
-                        </div>
+                    <p className={styles.title}>чаще всего ищут</p>
 
-                        {active && (
-                            <div className={styles.rightCol}>
-                                {menu[active].map(sub => (
-                                    <p key={sub} className={styles.text}>
-                                        {sub}
-                                    </p>
-                                ))}
-                            </div>
-                        )}
+                    <div className={styles.filter_container}>
+                        <p className={styles.title}>футболка  Filter Everything</p>
+                        <p className={styles.title}>весна 2025</p>
+                        <p className={styles.title}>Ryfo uip hip hop</p>
+                        <p className={styles.title}>футболка  Filter Everything</p>
                     </div>
                 </div>
             </div>
