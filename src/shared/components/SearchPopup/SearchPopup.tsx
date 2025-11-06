@@ -14,6 +14,11 @@ export const SearchPopup = ({ onClose }: PopupProps) => {
             <div className={styles.overlay} onClick={onClose} />
 
             <div className={styles.container}>
+                <input
+                    placeholder="Начните писать"
+                    type="text"
+                    className={styles.input}
+                />
                 <img
                     src={closeIcon}
                     alt="Закрыть"
