@@ -15,7 +15,7 @@ export const SearchPopup = ({ onClose }: PopupProps) => {
 
             <div className={styles.container}>
                 <input
-                    placeholder="Начните писать"
+                    placeholder="что ищете"
                     type="text"
                     className={styles.input}
                 />

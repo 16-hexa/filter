@@ -10,6 +10,26 @@
   align-items: center;
 }
 
+.input{
+  border: 1px solid #343434;
+  border-radius: 11px;
+  font-family: var(--font-roboto-condensed-light);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.08em;
+  color: #343434;
+
+  &::placeholder{
+    font-family: var(--font-roboto-condensed-light);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.08em;
+    color: #343434;
+  }
+}
+
 .overlay {
   position: fixed;
   top: 0;
