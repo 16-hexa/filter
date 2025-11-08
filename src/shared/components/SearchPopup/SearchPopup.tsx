@@ -14,17 +14,19 @@ export const SearchPopup = ({ onClose }: PopupProps) => {
             <div className={styles.overlay} onClick={onClose} />
 
             <div className={styles.container}>
-                <input
-                    placeholder="что ищете"
-                    type="text"
-                    className={styles.input}
-                />
-                <img
-                    src={closeIcon}
-                    alt="Закрыть"
-                    className={styles.closeIcon}
-                    onClick={onClose}
-                />
+                <div className={styles.input_container}>
+                    <input
+                        placeholder="что ищете"
+                        type="text"
+                        className={styles.input}
+                    />
+                    <img
+                        src={closeIcon}
+                        alt="Закрыть"
+                        className={styles.closeIcon}
+                        onClick={onClose}
+                    />
+                </div>
 
                 <div className={styles.content}>
                     <p className={styles.title}>чаще всего ищут</p>
