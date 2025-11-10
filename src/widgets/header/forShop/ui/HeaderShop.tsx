@@ -1,9 +1,10 @@
 import styles from './shop.module.scss';
 import {useEffect, useState} from "react";
-import {PopupHeader} from "@shared/components";
+import {PopupHeader, SearchPopup} from "@shared/components";
 
 export const HeaderShop = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [activeLink, setActiveLink] = useState<string | null>(null);
 
@@ -45,9 +46,11 @@ export const HeaderShop = () => {
     };
 
     const openPopup = () => setIsPopupOpen(true);
+    const openSearch = () => setIsSearchOpen(true);
 
     const closePopup = () => {
         setIsPopupOpen(false);
+        setIsSearchOpen(false)
         setActiveLink(null);
     };
 
@@ -77,8 +80,7 @@ export const HeaderShop = () => {
 
                     <a
                         onClick={() => {
-                            handleClick('search');
-                            smoothScrollTo('contact', 100);
+                            handleClick('search', openSearch);
                         }}
                         className={activeLink === 'search' ? styles.active : ''}
                     >поиск</a>
@@ -86,6 +88,7 @@ export const HeaderShop = () => {
             </header>
 
             {isPopupOpen && <PopupHeader onClose={closePopup} />}
+            {isSearchOpen && <SearchPopup onClose={closePopup} />}
         </>
     );
 };
