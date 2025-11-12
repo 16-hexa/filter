@@ -1,5 +1,5 @@
 .container{
-  width: 551px;
+  width: 351px;
   background: rgba(255, 255, 255, 0.21);
   backdrop-filter: blur(39.5px);
   padding: 23px;
@@ -9,15 +9,19 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-
+  flex-direction: column;
 }
 
-.input_container{
+.input_container {
   display: flex;
+  align-items: center;
   gap: 10px;
+  flex-direction: row;
+  position: relative;
 }
 
 .input{
+  flex: 1;
   border: 1px solid #343434;
   border-radius: 11px;
   font-family: var(--font-roboto-condensed-light);
@@ -26,6 +30,8 @@
   line-height: 28px;
   letter-spacing: -0.08em;
   color: #343434;
+  background: transparent;
+  padding: 4px 10px;
 
   &::placeholder{
     font-family: var(--font-roboto-condensed-light);
@@ -67,9 +73,7 @@
 }
 
 .closeIcon {
-  position: absolute;
-  top: 23px;
-  right: 23px;
+  position: static;
   width: 31px;
   height: 31px;
   cursor: pointer;
