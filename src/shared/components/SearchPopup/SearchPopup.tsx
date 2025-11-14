@@ -40,7 +40,7 @@ export const SearchPopup: FC<SearchPopupProps> = ({ onClose }) => {
                             "Ryfo uip hip hop",
                             "футболка Filter Everything",
                         ].map((item, index) => (
-                            <p key={index} className={styles.title}>
+                            <p key={index} className={styles.title_small}>
                                 {item}
                             </p>
                         ))}

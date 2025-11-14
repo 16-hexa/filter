@@ -4,7 +4,7 @@
   backdrop-filter: blur(39.5px);
   padding: 23px;
   color: var(--grey);
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,6 +61,16 @@
   line-height: 21px;
   letter-spacing: -0.04em;
   margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.title_small{
+  font-family: var(--font-roboto-condensed);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.04em;
+  margin-top: 1.2rem;
 }
 
 .text{
