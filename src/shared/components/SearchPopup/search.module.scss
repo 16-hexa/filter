@@ -170,3 +170,85 @@
     color: #fff;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 20px 16px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .inputContainer {
+    gap: 8px;
+  }
+
+  .input {
+    font-size: 15px;
+    padding: 6px 10px;
+
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+
+  .closeIcon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title_small {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .filter_container {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+
+  .sizeButton {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .title_small {
+    font-size: 15px;
+  }
+}
